@@ -20,14 +20,34 @@
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
           <li>HTML stands for HyperText Markup Language.</li>
+          <li>HTML is used to create the structure or foundation of the webpage.</li>
+          <li>It is made up of elements that work together to provide content and basic framework.</li>
+          <li>Test elements, image elements, header elements, list elements.</li>
+          <li>elements are also used to divide the content on the page and to describe the content to browsers and other devs.</li>
+          <li>Meta-related elements, content division elements and semantic elements are used to divide and describe a page.</li>
+          <li>HTML framework uses angle brackets for opening and closing tags.</li>
+          <li>Head element is a container for metadata</li>
+          <li>Meta elements contain information about the page that is used by the browser.</li>
+          <li>The charset element sets character encoding.</li>
+          <li>The http-equiv element sets an HTTP header for content.</li>
+          <li>The viewport element sets the default view for our webpage.</li>
+          <li>HTML will have an index.html file.</li>
         </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
+          <li>There are 3 ways to style a wabpage using CSS: inline CSS, internal CSS style sheet and external CSS style sheet.</li>
+          <li>Inline CSS is for styling an element directly in the HTML file. It applies to a specific HTML tag. Useful for quick and permanent changes but less flexible.</li>
+          <li>Inline style must be edited individually whenever you make a design change.</li>
           <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>CSS stands for Cascading Style Sheets.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>CSS stands for Cascading Style Sheets.</li>
+          <li>CSS is the decorative part of a webpage.</li>
+          <li>CSS will have a style.css file.</li>
+          <li>The margin property assigns px amount to top and bottom, while auto value to the left and right.</li>
+          <li>The border property assigns a border. Px, color and type all determined by the code used in CSS.</li>
+          <li>The box-shadow CSS property adds shadow effects around an element's frame.</li>
         </ul>
       </section>
       <section class="card" id="git-section">
@@ -35,6 +55,20 @@
         <ul>
           <li>Git status: checks what branch we are currently on.</li>
           <li>Git checkout -b branch-name: creates a new branch and switches to it.</li>
+          <li>ls shows all files and directories in current location.</li>
+          <li>cd followed by a location enters us into that specific folder or directory.</li>
+          <li>pwd command prints current directory into the terminal.</li>
+          <li>Cd .. allows us to go back 1 directory at a time.</li>
+          <li>mkdir followed by a name creates a brand new directory.</li>
+          <li>touch such as touch first-day.txt creates a new file in the terminal.</li>
+          <li>code . opens current folder in VS code.</li>
+          <li>git status checks current branch.</li>
+          <li>git checkout -b feature/insertnameofnewbranch here creates a new branch.</li>
+          <li>git add -A states that we want to add all changes.</li>
+          <li>git commit -m with a description tells us what we are committing.</li>
+          <li>git pull origin main tells the computer where the pull request is going.</li>
+          <li>git push origin feature/insertbranchyoureworkingonhere pushes the new branch to github for a pull request.</li>
+          <li>git checkout main and git pull origin main are used consistently to switch to the main branch and then sync your remote and local main branches.</li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
@@ -42,8 +76,51 @@
         <ul>
           <li>A variable is a named container that allows us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>Avoid using var because all modern JS uses new syntax.</li>
+          <li>The const keyword allows us to create variables that can't be reassigned a value. Once declared, we can never reassign it.</li>
+          <li>let is another variable keyword we might use.</li>
+          <li>After the const keyword we give the variable a name, it must be a unique name because it's how we reference the info stored in the variable in our code.</li>
+          <li>The const on this particular webpage is topics so it looks like: const topics "HTML, CSS, Git, Javascript, CLI";</li>
+          <li>To access the string "HTML, CSS, Git, Javascript, CLI" we can simply refer to the variable's name, topics.</li>
+          <li>console.log outputs the value of topics to the web console because we added it as an arguement inside the parentheses.</li>
+          <li>There are multiple ways to access the web console, F12 while on the webpage is my preferred way.</li>
+          <li>Note that while the style.css is linked within the head element, the script.js file is linked within the body element.</li>
+          <li>JS uses if, else if and else statements. else if statements help us provide more than one condition in JS.</li>
+          <li>When the computer encounters an if statement in a JS file it will check to see if the condition we provide is "truthy."</li>
+          <li>If the condition isn't true or has a value that isn't truthy, the computer will ignore whatever is in between the curly brackets and move on.</li>
+          <li>An array is a single variable that holds a group of data. Typically the data in an array is all related in some way.</li>
+          <li>A for loop performs a task on each piece of the data using just a few lines of code.</li>
+          <li>To create an array instead of assigning the variable to a single value, we assign the variable to a group of values.</li>
+          <li>As long as the number in the variable x is less than the length of the array, the loop will keep running.</li>
+          <li>You put the code that we want to be executed for each loop inside curly brackets.</li>
+          <li>Indices follow a predictable pattern of 0, 1, 2, 3....</li>
+          <li>The code x++ is a shortcut way of writing x+1 because we know each number will always increase by 1 every time the code loops.</li>
+          <li>A function is a set of instructions that tells the computer how to perform a certain task.</li>
+          <li>Unlike for loops, functions do not automatically execute when the JS file is run.</li>
+          <li>Being able to call a function to execute it also means you can control where in the control flow a task is executed or if it is executed at all.</li>
+          <li>To create a function we use the keyword "function."</li>
+          <li>The function's name is followed by parentheses.</li>
+          <li>To call a function we use the name of the function in our JS file where we want the code to execute.</li>
+          <li>Uncaught reference error: topic is not defined is a common JS error that devs face commonly.</li>
+          <li>Make sure when changing variables while adding an array to change the initial variable to match the one in the array so that the function looks for the array instead of the variable.</li>
+          <li>Make sure to include [0] with the variable in the array so that it will match the first item in the array to the provided strings.</li>
+          <li>To randomize our selection we use a special "math" function that helps select a random number.</li>
+          <li>In order to have correct control flow, the random variable needs to be AFTER the array is defined.</li>
         </ul>
       </section>
+      <section class="card" id="CLI-command-information">
+        <h2>README</h2>
+        <ul>
+          <li>In VS code, access README.md to work on the README file.</li>
+          <li>Project title, description, table of contents, installation, usage, credits, license, badges, features, how to contribute, tests are the order of format for a professional README.</li>
+          <li>A README file acts like a virtual storefront to a repo. It's the first thing a person sees when visiting a repo on GitHub.</li>
+          <li>README files contain essential information about the repo's project.</li>
+          <li>There is no right way to structure a README file but there is a wrong way and that is to not include one or create a very sparse one.</li>
+          <li>README files should contain as much information about the repo as pertains such as what was the motivation, why did you build this project and what problem(s) does it solve.</li>
+          <li>README files might also describe challenges faced during the project and features planned for implementation in the future.</li>
+          <li>README files are writted in Markdown and are always named README.md.</li>
+        </ul>
+         </section>
  </main>
 
     <footer>
